@@ -16,6 +16,15 @@ app.get("/", function (request, response) {
 })
 
 
+app.get("/getInfo", function (request, response) {
+    response.send({
+        name: "Nguyen Duy Tai",
+        job: "Intern at Cyberskill",
+        position: "Intern Devop"
+    })
+})
+
+
 
 
 app.listen(10000, function () {
